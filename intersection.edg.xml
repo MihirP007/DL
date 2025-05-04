@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+
+    <!-- Define properties for the roads (edges) -->
+    <!-- These IDs (e.g., "edge_N_in") are IMPORTANT for the route generation script -->
+    <!-- Increased numLanes to 2 for higher capacity and side-by-side potential -->
+
+    <!-- Edges coming INTO the center intersection -->
+    <edge id="edge_N_in" from="N" to="center" priority="2" numLanes="2" speed="13.89"/> <!-- 50 km/h -->
+    <edge id="edge_S_in" from="S" to="center" priority="2" numLanes="2" speed="13.89"/>
+    <edge id="edge_E_in" from="E" to="center" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="edge_W_in" from="W" to="center" priority="1" numLanes="2" speed="13.89"/>
+
+    <!-- Edges going OUT FROM the center intersection -->
+    <edge id="edge_N_out" from="center" to="N" priority="2" numLanes="2" speed="13.89"/>
+    <edge id="edge_S_out" from="center" to="S" priority="2" numLanes="2" speed="13.89"/>
+    <edge id="edge_E_out" from="center" to="E" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="edge_W_out" from="center" to="W" priority="1" numLanes="2" speed="13.89"/>
+
+</edges>

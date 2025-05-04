@@ -1,0 +1,6 @@
+netconvert --node-files=intersection.nod.xml --edge-files=intersection.edg.xml -o my_intersection.net.xml --junctions.internal-link-detail=5 --tls.default-type static --tls.discard-loaded --tls.guess --tls.join --output.original-names
+
+
+python generate_random_routes.py -n 2500 -d 1800 -o random_traffic.rou.xml --origins edge_N_in edge_S_in edge_E_in edge_W_in --destinations edge_N_out edge_S_out edge_E_out edge_W_out
+
+sumo-gui -c intersection.sumocfg

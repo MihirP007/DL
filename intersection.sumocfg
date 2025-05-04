@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+    <input>
+        <net-file value="my_intersection.net.xml"/>      <!-- Regenerated -->
+        <route-files value="random_traffic.rou.xml"/>    <!-- Regenerated -->
+        <additional-files value="tls_program.add.xml"/> <!-- Your TLS Program -->
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="1800"/> <!-- Match or exceed route duration -->
+    </time>
+    <processing>
+        <ignore-route-errors value="true"/>
+    </processing>
+     <gui_only>
+        <start value="true"/> <!-- Auto-start the simulation in GUI -->
+        <delay value="150"/>
+		<tracker-interval value="0.1"/> <!-- Update view faster -->
+    </gui_only>
+</configuration>
